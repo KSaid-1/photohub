@@ -50,7 +50,7 @@ class PsfError(Exception):
     def __init__(self, value):
         self.value = value
     def __str__(self):
-        return `self.value`
+        return str(self.value)  # Changed from `self.value` to str(self.value)
 #------------------------------------------------------------------------------------#
 #------------------------------------------------------------------------------------#
 def mkpsf(corename,outname, verbose):
